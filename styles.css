@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+/* MAIN */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 /* HEADER ----------------------------------------------------------------------------*/
 
 button {
