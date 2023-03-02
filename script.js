@@ -19,6 +19,20 @@ window.addEventListener("scroll", () => {
   lastScrollTop = scrollTop;
 });
 
+const h1 = document.getElementById("h1"),
+  banner = document.getElementById("banner"),
+  button = document.getElementById("button");
+
+// SCROLLING EFFEKT PÅ TOP BANNER
+const onScroll = (event) => {
+  const scrollPosition = event.target.scrollingElement.scrollTop;
+
+  if (scrollPosition > 130) {
+    banner.style.backgroundSize = "180%";
+  } else {
+    banner.style.backgroundSize = "120%";
+  }
+};
 window.onload = () => {
   const progressBar = document.querySelector(".read-progress");
 
@@ -100,3 +114,5 @@ let swiper = new Swiper(".slide-container", {
     },
   },
 });
+
+document.addEventListener("scroll", onScroll);

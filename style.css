@@ -1,21 +1,6 @@
 /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-.container {
-  padding: 2% 5%;
-}
-
-.read-progress {
-  height: 5px;
-  position: fixed;
-  background: #23a7ff;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  z-index: 9999;
-  transition: linear;
-  top: 0;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -38,7 +23,7 @@ img {
   height: auto;
 }
 
-/* ICONS */
+/* ICONS---------------------------------------- */
 
 .some_icons_container {
   display: flex;
@@ -130,6 +115,19 @@ img {
   }
 }
 
+/* READ PROGRESS BAR ----------------------------------*/
+
+.read-progress {
+  height: 5px;
+  position: fixed;
+  background: #23a7ff;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  z-index: 9999;
+  transition: linear;
+  top: 0;
+}
+
 /* MY_PICTURE SECTION ---------------------------------- */
 .my_picture {
   display: flex;
@@ -137,8 +135,23 @@ img {
 
   background-color: aquamarine;
 }
-.my_headshot {
-  height: auto;
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  background: url(visuals/images/my_picture.png);
+  background-color: #717171;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+}
+.still_image {
+  opacity: 0;
 }
 
 /* HEADER ---------------------------------------*/
