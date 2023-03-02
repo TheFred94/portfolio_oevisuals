@@ -9,7 +9,7 @@
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-
+    <link href="css/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -19,9 +19,13 @@
       <nav class="navbar">
           <!--Logo indsættes her !-->
 
+          <button data-menu-button class="navbar-burger hamburger hamburger--collapse" type="button" onclick="toggleMenu()">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>  
               
               
-              <button class="navbar-burger" onclick="toggleMenu()"></button>
               <nav class="menu">
                   <a href="#" style="animation-delay: 0.1s">Home</a>
                   <a href="#" style="animation-delay: 0.2s">About</a>
@@ -55,25 +59,27 @@
   
   
       </section>
-      <section>
+      <h2>My passion</h2>
+      <section class="image_carousel">
         <div class="carousel" data-carousel>
           <button class="carousel-button prev" data-carousel-button="prev"><-</button>
-          <button class="carousel-button next" data-carousel-button="next">-></button>
-        <ul data-slides>
-          <li class="slide" data-active>
+          <button class="carousel-button next" data-carousel-button="next">-></button>       
+          <ul data-slides>
             <img src="visuals/images/appDev.jpg" alt="Web developer Image #1">
-          </li>
-          <li class="slide">
-            <img src="visuals/images/blogger.jpg" alt="Web developer Image #2">
-          </li>
-          <li class="slide">
-            <img src="visuals/images/photographer.jpg" alt="Web developer Image #3">
-          </li>
-        </ul>
-      </div>
+            <li class="slide" data-active>
+              <img src="visuals/images/appDev.jpg" alt="Web developer Image #1">
+            </li>
+            <li class="slide">
+              <img src="visuals/images/blogger.jpg" alt="Web developer Image #2">
+            </li>
+            <li class="slide">
+              <img src="visuals/images/photographer.jpg" alt="Web developer Image #3">
+            </li>
+          </ul>
       </section>
+      
+    
     <section>
-      <h2>My passion</h2>
       <div class="container swiper">
         <div class="slide-container">
           <div class="card-wrapper swiper-wrapper">

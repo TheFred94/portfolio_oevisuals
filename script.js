@@ -1,9 +1,16 @@
 const toggleMenu = () => {
-  document.body.classList.toggle("open");
+  const body = document.body;
+  const menuButton = document.querySelector("[data-menu-button]");
+  const swiper = document.querySelector(".swiper");
+
+  body.classList.toggle("open");
+  menuButton.classList.toggle("is-active");
+  swiper.style.zIndex = body.classList.contains("open") ? 0 : "";
 };
 
 const buttons = document.querySelectorAll("[data-carousel-button]");
 
+// Controls the image gallery.
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const offset = button.dataset.carouselButton === "next" ? 1 : -1;
