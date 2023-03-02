@@ -1,0 +1,414 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+section {
+  display: grid;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  background: #efefef;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CARD SLIDER -------------------------------------- */
+.container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+}
+.card .image-box {
+  height: 200px;
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.card .profile-details {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 15px;
+}
+.card .profile-details img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.profile-details .name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.profile-details .job {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+.swiper-navBtn {
+  color: #000;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 18px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+/* MY_PICTURE SECTION ---------------------------------- */
+.my_picture {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  background-color: aquamarine;
+}
+.my_headshot {
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navbar,
+.navbar-burger,
+.menu,
+.background {
+  position: fixed;
+}
+
+.background {
+  z-index: 1;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+
+  /* Baggrundsbillede her*/
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+}
+
+body.open .background {
+  filter: blur(20px);
+}
+
+.navbar {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 72px;
+  padding-left: 20px;
+  padding-right: 72px;
+  background: #19191c;
+  color: #f9f9f9;
+}
+
+.navbar > button {
+  font-size: 28px;
+}
+
+.navbar-logo {
+  height: 25px;
+}
+
+.navbar-burger {
+  z-index: 3;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  /* Ikon for burgermenu indsættes her */
+  background-color: #ff4081;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Ikon for burgermenu lukkes indsættes her */
+body.open .navbar-burger {
+  background-color: #dd2c00;
+}
+
+.navbar-search {
+  border: 0;
+  height: 40px;
+  background: #2f3339 /* Indsæt ikon/billede her til søgefelt*/ url("assets/search.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+  border: 0;
+  border-radius: 6px;
+  padding-left: 36px;
+  width: 180px;
+  font-size: 16px;
+  font-family: "Euclid Circular A";
+}
+
+.navbar-search::placeholder {
+  color: #a7a7a7;
+}
+
+.menu {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+body.open .menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu > a {
+  color: #f9f9f9;
+  font-size: 32px;
+  font-family: "Euclid Circular A";
+  text-decoration: none;
+}
+
+body.open .menu > a {
+  animation: appear 0.3s both;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    translate: 0 50px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* IMAGE GALLERY */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* IMAGE GALLERY */
+
+.gallery {
+  flex-direction: column;
+}
+
+.image {
+  flex: 0 0 100%;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* IMAGE CAROUSEL -------------------------------- */
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba (0, 0, 0, 0.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel.button.prev {
+  left: 1rem;
+}
+.carousel.button.next {
+  left: 1rem;
+}
