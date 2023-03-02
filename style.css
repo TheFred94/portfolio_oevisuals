@@ -23,6 +23,18 @@ img {
   height: auto;
 }
 
+/* ICONS */
+
+.some_icons_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.some_icons {
+  height: 50px;
+  width: 50px;
+}
+
 /* CARD SLIDER -------------------------------------- */
 .container {
   max-width: 1120px;
@@ -104,8 +116,17 @@ img {
   height: auto;
 }
 
-* {
-  box-sizing: border-box;
+/* HEADER ---------------------------------------*/
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+#main-header.hidden {
+  transform: translateY(-100%);
 }
 
 button {
@@ -243,7 +264,7 @@ body.open .menu > a {
   }
 }
 
-/* IMAGE GALLERY */
+/* IMAGE GALLERY ---------------------------------------------------*/
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;

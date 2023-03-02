@@ -1,3 +1,25 @@
+let lastScrollTop = 0;
+const header = document.getElementById("main-header");
+const body = document.querySelector("body");
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (body.classList.contains("open")) {
+    return;
+  }
+
+  if (scrollTop > lastScrollTop) {
+    // user is scrolling down
+    header.classList.add("hidden");
+  } else {
+    // user is scrolling up
+    header.classList.remove("hidden");
+  }
+  lastScrollTop = scrollTop;
+});
+
+// Toggle function for the menu/burger button
 const toggleMenu = () => {
   const body = document.body;
   const menuButton = document.querySelector("[data-menu-button]");
@@ -27,6 +49,7 @@ buttons.forEach((button) => {
   });
 });
 
+// Controls the card swiper
 let swiper = new Swiper(".slide-container", {
   slidesPerView: 3,
   spaceBetween: 20,
