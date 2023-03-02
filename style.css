@@ -39,6 +39,11 @@ img {
   height: 50px;
   width: 50px;
 }
+.some_icons_footer {
+  fill: #f0f0f0;
+  height: 50px;
+  width: 50px;
+}
 
 /* CARD SLIDER -------------------------------------- */
 .container {
