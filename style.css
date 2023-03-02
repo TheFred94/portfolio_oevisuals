@@ -1,6 +1,21 @@
 /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+.container {
+  padding: 2% 5%;
+}
+
+.read-progress {
+  height: 5px;
+  position: fixed;
+  background: #23a7ff;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  z-index: 9999;
+  transition: linear;
+  top: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -119,7 +134,7 @@ img {
 .my_picture {
   display: flex;
   justify-content: center;
-  margin-top: 64px;
+
   background-color: aquamarine;
 }
 .my_headshot {

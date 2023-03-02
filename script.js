@@ -19,6 +19,23 @@ window.addEventListener("scroll", () => {
   lastScrollTop = scrollTop;
 });
 
+window.onload = () => {
+  const progressBar = document.querySelector(".read-progress");
+
+  if (progressBar && typeof progressBar === "object") {
+    let h = document.documentElement.scrollHeight,
+      footer = 0,
+      vh = window.innerHeight;
+
+    const updateProgress = () => {
+      let pos = window.scrollY;
+      progressBar.style.width = (pos / (h - vh - footer)) * 100 + "%";
+    };
+    window.addEventListener("scroll", updateProgress);
+    updateProgress();
+  }
+};
+
 // Toggle function for the menu/burger button
 const toggleMenu = () => {
   const body = document.body;
