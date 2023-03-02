@@ -3,6 +3,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 section {
   display: grid;
@@ -14,7 +16,10 @@ body {
   align-items: center;
   background: #efefef;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* CARD SLIDER -------------------------------------- */
 .container {
   max-width: 1120px;
@@ -89,7 +94,7 @@ body {
 }
 .my_headshot {
   height: auto;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 /* HEADER ----------------------------------------------------------------------------*/
@@ -134,7 +139,7 @@ body.open .background {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 72px;
+  height: 55px;
   padding-left: 20px;
   padding-right: 72px;
   background: #19191c;
@@ -155,8 +160,8 @@ body.open .background {
   right: 0;
   display: grid;
   place-items: center;
-  width: 72px;
-  height: 72px;
+  width: 55px;
+  height: 55px;
   /* Ikon for burgermenu indsættes her */
   background-color: #ff4081;
   background-repeat: no-repeat;
