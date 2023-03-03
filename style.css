@@ -9,6 +9,11 @@
   font-family: jetbrains-mono-regular;
   src: url(font/JetBrainsMonoNL-Regular.ttf);
 }
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: var(--white_color);
+}
 
 html {
   --purple_color: #8551a9;
@@ -46,10 +51,6 @@ a {
   box-sizing: border-box;
 }
 
-main {
-  max-width: 1200px;
-  background-color: var(--white_color);
-}
 section {
   display: grid;
 }
@@ -163,7 +164,8 @@ footer {
 
 /* CARD SLIDER -------------------------------------- */
 .container {
-  max-width: 1120px;
+  margin: 0 auto;
+  max-width: 1200px;
   width: 100%;
 }
 .slide-container {
