@@ -85,6 +85,12 @@ img {
 
 .some_icons_container {
   display: flex;
+
+  justify-content: space-evenly;
+}
+.some_icons_container_menu {
+  display: flex;
+
   justify-content: space-evenly;
 }
 
@@ -177,7 +183,7 @@ img {
 .read-progress {
   height: 5px;
   position: fixed;
-  background: #23a7ff;
+  background-image: linear-gradient(135deg, #ce9ffc 10%, #7367f0 100%);
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   z-index: 9999;
@@ -192,6 +198,7 @@ img {
 }
 .banner_container {
   background-image: linear-gradient(135deg, #ce9ffc 10%, #7367f0 100%);
+  border-radius: 8px;
 }
 
 .banner {
@@ -352,8 +359,9 @@ body.open .menu {
 body.open .menu > a {
   animation: appear 0.3s both;
 }
-body.open .menu > .some_icons_container {
+body.open .menu > .some_icons_container_menu {
   animation: appear 0.3s both;
+  gap: 20px;
 }
 
 @keyframes appear {
