@@ -65,7 +65,7 @@ img {
   height: auto;
 }
 
-/* BUTTON AND A HOVER */
+/* BUTTON AND A HOVER --------------------------- */
 nav > a {
   width: 200px;
   height: 50px;
@@ -76,6 +76,27 @@ nav > a {
 
 nav > a:hover {
   box-shadow: inset 300px 0 0 0 var(--purple_color);
+}
+
+.a_button {
+  font-family: jetbrains-mono-bold;
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 220px;
+  height: 50px;
+  text-transform: uppercase;
+  text-align: start;
+
+  transition: ease-out 0.3s;
+  box-shadow: inset 0 0 0 0 var(--purple_color);
+  color: var(--purple_color);
+  z-index: 1;
+  padding-top: 10px;
+}
+
+.a_button:hover {
+  box-shadow: inset 300px 0 0 0 var(--purple_color);
+  color: var(--white_color);
 }
 section > a {
   width: 200px;
