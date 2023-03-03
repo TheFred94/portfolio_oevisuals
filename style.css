@@ -135,6 +135,11 @@ footer {
   height: auto;
 }
 
+.about_me_container {
+  padding-top: 2rem;
+  padding-bottom: 3.5rem;
+}
+
 /* ICONS---------------------------------------- */
 
 .some_icons_container {
@@ -168,6 +173,7 @@ footer {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+  padding-inline: 1.2rem;
 }
 .slide-container {
   margin: 0 30px;
@@ -623,7 +629,7 @@ body.open .menu > .some_icons_container_menu {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    justify-content: space-between;
+    justify-content: start;
   }
 
   .about_me > p {
