@@ -5,6 +5,10 @@
   font-family: jetbrains-mono-bold;
   src: url(font/JetBrainsMonoNL-ExtraBold.ttf);
 }
+@font-face {
+  font-family: jetbrains-mono-regular;
+  src: url(font/JetBrainsMonoNL-Regular.ttf);
+}
 
 html {
   --purple_color: #8551a9;
@@ -13,8 +17,29 @@ html {
 }
 
 h1 {
+  font-size: 3rem;
   font-family: jetbrains-mono-bold;
   text-transform: uppercase;
+}
+h2 {
+  font-size: 2rem;
+  font-family: jetbrains-mono-bold;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1.5rem;
+  font-family: jetbrains-mono-bold;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  font-family: jetbrains-mono-regular;
+}
+
+a {
+  font-size: 1rem;
+  font-family: jetbrains-mono-regular;
 }
 
 * {
@@ -175,7 +200,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 #main-header.hidden {
@@ -290,7 +315,7 @@ body.open .navbar-burger {
   background: rgba(0, 0, 0, 0.8);
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 body.open .menu {
