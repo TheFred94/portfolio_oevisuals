@@ -345,11 +345,14 @@ body.open .menu {
 .menu > a {
   color: #f9f9f9;
   font-size: 32px;
-  font-family: "Euclid Circular A";
+
   text-decoration: none;
 }
 
 body.open .menu > a {
+  animation: appear 0.3s both;
+}
+body.open .menu > .some_icons_container {
   animation: appear 0.3s both;
 }
 
