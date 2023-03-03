@@ -48,6 +48,7 @@ a {
 
 main {
   max-width: 1200px;
+  background-color: var(--white_color);
 }
 section {
   display: grid;
@@ -62,6 +63,22 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* ABOUT ME ----------------------- */
+
+.about_me > ul {
+  padding: 0;
+  list-style: none;
+}
+.icon_container {
+  display: flex;
+  justify-content: center;
+}
+
+.about_me_icon {
+  width: 100px;
+  height: 100px;
 }
 
 /* ICONS---------------------------------------- */
