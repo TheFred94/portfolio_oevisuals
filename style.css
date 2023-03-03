@@ -174,7 +174,7 @@ img {
 }
 
 #main-header.hidden {
-  transform: translateY(-100%);
+  transform: translateX(100%);
 }
 
 button {
@@ -243,8 +243,10 @@ body.open .background {
   height: 72px;
   /* Ikon for burgermenu indsættes her */
   background-color: #ff4081;
+  border-radius: 8px 0px 0px 8px;
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: 8px;
 }
 
 /* Ikon for burgermenu lukkes indsættes her */
