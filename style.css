@@ -67,6 +67,7 @@ img {
 
 /* BUTTON AND A HOVER --------------------------- */
 nav > a {
+  text-transform: uppercase;
   width: 200px;
   height: 50px;
   text-align: center;
@@ -121,8 +122,8 @@ section > a:hover {
 }
 
 .about_me_icon {
-  width: 100px;
-  height: 100px;
+  max-width: 50%;
+  height: auto;
 }
 
 /* ICONS---------------------------------------- */
