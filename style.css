@@ -322,10 +322,11 @@ body.open .menu > a {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+
   padding: 16px;
   color: white;
   font-weight: bold;
+  height: 100%;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -442,14 +443,9 @@ body.open .menu > a {
   background-color: rgba (0, 0, 0, 0.1);
 }
 
-.carousel-button:hover,
-.carousel-button:focus {
+.carousel-button:hover {
   color: white;
   background-color: rgba(0, 0, 0, 0.2);
-}
-
-.carousel-button:focus {
-  outline: 1px solid black;
 }
 
 .carousel.button.prev {
