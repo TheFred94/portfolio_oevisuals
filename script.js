@@ -28,9 +28,9 @@ const onScroll = (event) => {
   const scrollPosition = event.target.scrollingElement.scrollTop;
 
   if (scrollPosition > 130) {
-    banner.style.backgroundSize = "180%";
+    banner.style.backgroundSize = "150%";
   } else {
-    banner.style.backgroundSize = "120%";
+    banner.style.backgroundSize = "100%";
   }
 };
 window.onload = () => {
