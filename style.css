@@ -251,7 +251,6 @@ body.open .background {
   height: 72px;
   padding-left: 20px;
   padding-right: 72px;
-
   color: #f9f9f9;
 }
 
@@ -277,11 +276,14 @@ body.open .background {
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 8px;
+  padding-right: 70px;
+  transform: translateX(15%);
+  transition: 0.5s;
 }
 
 /* Ikon for burgermenu lukkes indsættes her */
 body.open .navbar-burger {
-  background-color: #dd2c00;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .navbar-search {
