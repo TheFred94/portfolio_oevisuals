@@ -115,8 +115,52 @@ section > a:hover {
 
 /* FOOTER */
 footer {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
+  justify-content: start;
+  font-family: jetbrains-mono-regular;
+  color: var(--white_color);
   height: 200px;
   background-color: var(--black_color);
+}
+
+.contact {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact > ul {
+  padding: 0;
+  list-style: none;
+}
+
+.contact > a {
+  width: 120px;
+  z-index: 1;
+  color: var(--white_color);
+  transition: ease-out 0.3s;
+  box-shadow: inset 0 0 0 0 var(--purple_color);
+}
+.contact > a:hover {
+  z-index: 1;
+  box-shadow: inset 300px 0 0 0 var(--purple_color);
+}
+
+footer > button {
+  z-index: 1;
+  place-self: top;
+  justify-self: center;
+  height: 100px;
+  width: 100px;
+  transform: rotate(90deg);
+}
+
+footer > button > img {
+  height: auto;
+  width: 20px;
 }
 
 /* ABOUT ME ----------------------- */
@@ -143,8 +187,9 @@ footer {
 /* ICONS---------------------------------------- */
 
 .some_icons_container {
+  width: 100%;
+  height: 200px;
   display: flex;
-
   justify-content: space-evenly;
 }
 .some_icons_container_menu {
@@ -162,11 +207,6 @@ footer {
   height: 50px;
   width: 50px;
 }
-.some_icons_footer {
-  fill: #f0f0f0;
-  height: 50px;
-  width: 50px;
-}
 
 /* CARD SLIDER -------------------------------------- */
 .container {
@@ -176,7 +216,6 @@ footer {
   padding-inline: 1.2rem;
 }
 .slide-container {
-  margin: 0 30px;
   overflow: hidden;
 }
 .card {
