@@ -528,6 +528,17 @@ body.open .menu > .some_icons_container_menu {
   }
 }
 
+/* SCHOOL PROJECTS -------------------------- */
+
+.project_2 {
+  padding-top: 2rem;
+}
+
+.project_3 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
 /* IMAGE CAROUSEL -------------------------------- */
 
 .carousel {
