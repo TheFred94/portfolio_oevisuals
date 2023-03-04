@@ -313,10 +313,10 @@ footer > button > img {
 .banner_container {
   background-image: linear-gradient(135deg, #ce9ffc 10%, #7367f0 100%);
   border-radius: 8px;
+  height: 40vh;
 }
 
 .banner {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -327,6 +327,7 @@ footer > button > img {
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.5s;
+  height: 40vh;
 }
 .still_image {
   opacity: 0;
@@ -747,5 +748,13 @@ body.open .menu > .some_icons_container_menu {
   .project_3 > img {
     grid-column: 2 / 5;
     grid-row: 1 / 3;
+  }
+
+  .banner_container {
+    height: 100vh;
+  }
+
+  .banner {
+    height: 100vh;
   }
 }
