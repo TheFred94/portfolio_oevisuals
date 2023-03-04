@@ -192,6 +192,15 @@ footer > button > img {
   display: flex;
   justify-content: space-evenly;
 }
+
+.some_icons_menu {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.some_icons_menu:hover {
+  transform: scale(1.2);
+}
+
 .some_icons_container_menu {
   display: flex;
 
@@ -199,8 +208,15 @@ footer > button > img {
 }
 
 .some_icons {
+  z-index: 1;
   height: 50px;
   width: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.some_icons:hover {
+  transform: scale(1.2);
 }
 .some_icons_menu {
   fill: #f0f0f0;
