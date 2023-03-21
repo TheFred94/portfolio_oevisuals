@@ -15,6 +15,12 @@ main {
   background-color: var(--white_color);
 }
 
+iframe {
+  z-index: 1;
+  grid-row: 3;
+  grid-column: 1 / 4;
+}
+
 html {
   --purple_color: #8551a9;
   --black_color: #313844;
